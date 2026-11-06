@@ -1,0 +1,6 @@
+{
+  "name": "StayFinder",
+  "description": "Premium accommodation discovery, booking, property management, and living ecosystem for India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

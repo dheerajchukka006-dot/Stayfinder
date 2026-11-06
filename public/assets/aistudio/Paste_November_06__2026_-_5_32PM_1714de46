@@ -1,0 +1,958 @@
+MASTER PROMPT: BUILD STAYFINDER — COMPLETE FULL-STACK WEBSITE
+Act as a Principal Software Architect, Senior Full-Stack Engineer, UI/UX Designer, Database Architect, Security Engineer, and QA Engineer.
+Your task is to design and develop StayFinder, a production-oriented, full-stack accommodation discovery, booking, property management, and living ecosystem.
+Do not create a static prototype or a frontend-only demonstration. Build a functional application with real backend APIs, persistent database storage, authentication, authorization, validation, and properly connected frontend features.
+The project must be maintainable, scalable, secure, responsive, and ready for staged production deployment.
+1. PRODUCT IDENTITY
+Product: StayFinder
+Currency: INR (₹)
+Primary market: India
+Platforms: Responsive website and Android-compatible architecture
+Development environment: Google AI Studio
+Visual identity: Midnight Graphite
+Development strategy: Build the core marketplace first, then expand into the complete ecosystem.
+StayFinder should serve:
+Students looking for PGs and hostels.
+Working professionals looking for accommodation.
+Families looking for rental properties.
+Travellers looking for short-term stays.
+People relocating to new cities.
+Property owners and hostel/PG operators.
+Local service providers.
+2. TECHNICAL ARCHITECTURE
+Use a modular, production-oriented architecture.
+Frontend
+React
+TypeScript
+Responsive design
+Tailwind CSS
+Reusable components
+Form validation
+Accessible UI
+Proper loading, error, success, and empty states.
+Use Next.js if supported by the selected Google AI Studio runtime and project structure.
+Backend
+Node.js
+TypeScript
+REST API with versioning (/api/v1)
+Modular backend architecture.
+Centralized error handling.
+Input validation.
+Authentication and authorization middleware.
+Logging and audit trails.
+Preserve the intended NestJS modular architecture if compatible with the environment. Do not silently replace it with an unrelated architecture.
+Database
+Supabase PostgreSQL.
+PostGIS for location-based searches.
+Prisma ORM.
+Reviewed SQL migrations for database-specific features.
+Persistent storage, not mock arrays or browser-only storage.
+Authentication
+Firebase Authentication.
+Google sign-in.
+Phone OTP authentication.
+Backend verification of Firebase ID tokens.
+Secure sessions and account linking.
+Other integrations
+Cloudinary for property images.
+Razorpay for payments.
+Google Maps Platform for maps.
+Firebase Cloud Messaging for notifications.
+Do not hardcode API keys, passwords, service-role keys, or secrets. Use environment variables and secure secrets management.
+IMPORTANT ANDROID DECISION
+Keep the web application and backend modular so an Android application can use the same APIs.
+Do not generate a React Native application and a Kotlin application simultaneously. Before building the mobile app, confirm the chosen approach:
+Kotlin + Jetpack Compose for Google AI Studio's native Android workflow; or
+React Native + Expo for a shared TypeScript mobile architecture.
+Do not let this unresolved mobile decision delay the website.
+3. DESIGN SYSTEM — MIDNIGHT GRAPHITE
+Create a premium, modern, trustworthy accommodation platform.
+Design characteristics:
+Dark graphite background.
+Slate and charcoal surfaces.
+Blue primary action color.
+White primary text.
+Muted grey secondary text.
+Subtle borders and shadows.
+Clean typography.
+Modern cards and layouts.
+Consistent spacing.
+Smooth but restrained transitions.
+Responsive desktop, tablet, and mobile layouts.
+Do not use dominant green backgrounds or green as the primary brand color.
+The website should feel like a professional commercial platform, not a generic AI-generated template.
+4. WEBSITE PAGES
+Build the following pages with working navigation.
+Public pages
+Home page.
+Search results page.
+Property details page.
+Login page.
+Registration page.
+About StayFinder.
+Contact page.
+Help and FAQ.
+Terms and conditions.
+Privacy policy.
+Customer dashboard
+Overview.
+My profile.
+My bookings.
+Favourites.
+Saved searches.
+Messages.
+Notifications.
+Payment history.
+Reviews.
+Roommate finder.
+Household management.
+Maintenance requests.
+Account settings.
+Property owner dashboard
+Overview.
+My properties.
+Add property.
+Edit property.
+Room and bed management.
+Availability management.
+Booking requests.
+Enquiries.
+Tenant management.
+Messages.
+Maintenance.
+Revenue and payment records.
+Reviews.
+Analytics.
+Owner profile and verification.
+Admin dashboard
+Platform overview.
+User management.
+Owner verification.
+Property verification.
+Property moderation.
+Booking management.
+Payment and refund monitoring.
+Review moderation.
+Reports and complaints.
+Service provider verification.
+Audit logs.
+Platform settings.
+Protect all dashboard routes using authentication and authorization.
+5. HOME PAGE
+Create a polished home page containing:
+StayFinder logo and navigation.
+Prominent accommodation search section.
+Location input.
+Check-in/check-out dates where applicable.
+Monthly or short-term stay selection.
+Guest/occupancy selection.
+Search button.
+Popular cities.
+Featured properties.
+Recently added properties.
+Verified property section.
+Accommodation categories.
+How StayFinder works.
+Benefits for property owners.
+Local services preview.
+Testimonials backed by genuine data only.
+Footer with useful links.
+Search must retrieve real property records from the backend.
+6. PROPERTY DISCOVERY
+Support these accommodation types:
+PG.
+Hostel.
+Private room.
+Shared room.
+Apartment.
+Flat.
+Studio.
+Co-living.
+Guest house.
+Short-term stay.
+Implement:
+City and locality search.
+Postal code search.
+College and workplace search.
+Map-based search.
+Budget filters.
+Accommodation type filters.
+Private/shared room filters.
+Furnishing filters.
+Food availability.
+Gender preference.
+Amenities.
+Occupancy.
+Availability dates.
+Rating.
+Verified listing filter.
+Distance.
+Sorting by price, rating, relevance, distance, and recency.
+Pagination.
+Saved searches.
+Favourites.
+Every search must use actual database records. Never invent property listings or availability.
+7. PROPERTY DETAILS
+Each property details page should display:
+Property name.
+Images and videos.
+Full address.
+Map location.
+Description.
+Property type.
+Owner information.
+Room types.
+Available inventory.
+Pricing.
+Security deposit.
+Amenities.
+Food information.
+Utilities.
+House rules.
+Gender preferences.
+Availability.
+Reviews.
+Nearby facilities.
+Enquiry/contact owner option.
+Booking option.
+Display prices clearly in INR, such as ₹12,500/month.
+Store monetary amounts using integer minor units or another exact decimal representation with an explicit INR currency. Never use floating-point arithmetic for financial calculations.
+8. OWNER PROPERTY MANAGEMENT
+Allow property owners to:
+Register and create an owner profile.
+Submit verification details.
+Add properties.
+Upload property photos.
+Add room types.
+Set occupancy limits.
+Configure rent and deposit.
+Add amenities.
+Configure food and utility options.
+Set availability.
+Edit listings.
+Pause or archive listings.
+Submit listings for approval.
+Manage enquiries.
+Accept or reject booking requests.
+Manage tenants.
+Track revenue and occupancy.
+Property verification must be controlled by an authorized verification workflow. Users must not be able to grant themselves a verified badge.
+9. BOOKING ENGINE
+Implement a genuine booking workflow:
+Customer selects a property.
+Customer selects room type.
+Customer selects dates or rental duration.
+Backend checks actual availability.
+Backend calculates price and fees.
+Customer submits booking request.
+Inventory is reserved safely.
+Payment is initiated where required.
+Payment is verified by the backend.
+Booking is confirmed.
+Notifications are sent.
+Booking appears in the customer's dashboard.
+Support booking statuses:
+Pending.
+Awaiting payment.
+Confirmed.
+Rejected.
+Cancelled.
+Completed.
+Refund pending.
+Refunded.
+CRITICAL:
+Prevent double bookings.
+Use database transactions and appropriate locking or conflict constraints.
+Support idempotent booking and payment operations.
+Preserve a price snapshot when a booking is created.
+Handle expired reservations and failed payments.
+Do not rely on a simple is_booked boolean.
+10. PAYMENT SYSTEM
+Integrate Razorpay using secure backend APIs.
+Implement:
+Order creation.
+Payment initiation.
+Server-side payment verification.
+Signed webhook verification.
+Payment history.
+Failed payment handling.
+Refund workflow.
+Invoice generation.
+Transaction records.
+Reconciliation support.
+Never trust payment success reported only by the frontend.
+Do not enable live payments until the business rules for platform fees, commissions, refunds, and settlements have been defined and tested. Use sandbox/test mode initially.
+11. COMMUNICATION AND NOTIFICATIONS
+Implement:
+Customer-owner messaging.
+Booking-related conversations.
+Enquiry conversations.
+Message history.
+Unread counters.
+Read status.
+Notifications.
+Booking updates.
+Payment updates.
+Owner notifications.
+Admin alerts where appropriate.
+Use WebSockets or another suitable real-time messaging mechanism when supported.
+12. REVIEWS AND TRUST
+Implement:
+Property ratings.
+Written reviews.
+Cleanliness ratings.
+Location ratings.
+Facilities ratings.
+Owner responses.
+Review reporting.
+Admin moderation.
+Only eligible customers should be able to submit verified booking reviews.
+13. MAPS AND NEIGHBORHOOD
+Integrate Google Maps.
+Show:
+Property pins.
+Nearby colleges.
+Workplaces.
+Hospitals.
+Pharmacies.
+Supermarkets.
+Public transport.
+Restaurants.
+Local services.
+Calculate distances from actual geographic coordinates.
+Use PostGIS for efficient geospatial queries.
+14. STAYFINDER LIVING
+Build the following modules as later-stage features while keeping the architecture ready for them.
+Roommate finder
+Roommate profiles.
+Budget.
+Preferred locations.
+Lifestyle preferences.
+Room preferences.
+Matching.
+Connection requests.
+Reporting and blocking.
+Privacy controls.
+Household management
+Household creation.
+Member management.
+Shared expenses.
+Equal and custom expense splitting.
+Balances.
+Payment history.
+Shared tasks.
+Chores.
+Shopping lists.
+Announcements.
+Maintenance
+Maintenance requests.
+Categories.
+Photos.
+Priority.
+Status tracking.
+Owner responses.
+Resolution and feedback.
+15. LOCAL SERVICES
+Create a local services discovery module for:
+Food and mess services.
+Laundry.
+Cleaning.
+Furniture rental.
+Appliance rental.
+Moving and transportation.
+Internet providers.
+Plumbing.
+Electrical repairs.
+Maintenance services.
+Allow verified service providers to create profiles, list services, manage availability, receive enquiries, and collect eligible reviews.
+Initially prioritize discovery and enquiries. Add payments and service bookings only after their workflows are properly implemented.
+16. STAYFINDER INTELLIGENCE — FUTURE AI FEATURES
+Prepare modular integration points for:
+Natural-language accommodation assistant.
+Smart property recommendations.
+Voice search.
+AI room photo inspection.
+Lease agreement analysis.
+Rental price intelligence.
+Owner listing-description assistant.
+Review summarization.
+Owner vacancy insights.
+AI must use authorized backend data.
+Never allow AI to fabricate property availability, verification, payment confirmation, booking status, reviews, or safety guarantees.
+AI-generated owner changes must require owner approval.
+Do not delay the core marketplace to build these advanced AI modules.
+17. DATABASE REQUIREMENTS
+Use PostgreSQL as the single source of truth.
+Use Prisma and maintain reviewed migrations.
+Create relational models for:
+users
+profiles
+roles
+permissions
+user_roles
+owner_profiles
+owner_verifications
+properties
+property_images
+property_documents
+room_types
+room_inventory
+amenities
+property_amenities
+bookings
+booking_guests
+booking_status_history
+payments
+refunds
+invoices
+settlements
+reviews
+review_reports
+property_reports
+favourites
+saved_searches
+conversations
+conversation_members
+messages
+notifications
+notification_preferences
+device_tokens
+roommate_profiles
+roommate_requests
+households
+household_members
+expenses
+expense_splits
+maintenance_requests
+maintenance_updates
+service_providers
+services
+service_bookings
+admin_actions
+audit_logs
+platform_settings
+ai_interactions
+recommendation_events
+document_analysis_jobs
+Requirements:
+Correct primary keys and foreign keys.
+Unique constraints.
+Appropriate indexes.
+Referential integrity.
+Created and updated timestamps.
+Soft deletion where appropriate.
+PostGIS spatial indexes.
+Database transactions for critical operations.
+Secure handling of private data.
+No credentials stored in the user profile table.
+Create an ER diagram and database documentation.
+Do not delete or reset an existing database to make the application work. Use migrations and preserve existing user data.
+18. SECURITY
+Implement:
+Firebase ID-token verification on the backend.
+Role-based access control.
+Resource-level ownership checks.
+Server-side input validation.
+Rate limiting.
+Secure file uploads.
+File type and size validation.
+Private storage for sensitive verification documents.
+Safe error messages.
+Audit logging for privileged operations.
+Secure CORS configuration.
+Protection against SQL injection and common web vulnerabilities.
+Environment-based configuration.
+No secrets in frontend code or GitHub.
+A customer must not be able to access another customer's bookings or personal data.
+An owner must only manage authorized properties and related records.
+An admin must only perform actions allowed by their permissions.
+19. API STRUCTURE
+Use versioned REST endpoints.
+Organize APIs into modules:
+/api/v1/auth
+/api/v1/users
+/api/v1/properties
+/api/v1/rooms
+/api/v1/search
+/api/v1/bookings
+/api/v1/payments
+/api/v1/reviews
+/api/v1/favourites
+/api/v1/messages
+/api/v1/notifications
+/api/v1/owners
+/api/v1/admin
+/api/v1/roommates
+/api/v1/households
+/api/v1/maintenance
+/api/v1/services
+Include:
+Request validation.
+Response schemas.
+Authentication middleware.
+Authorization checks.
+Pagination.
+Consistent error responses.
+API documentation.
+20. TESTING
+Create meaningful tests for:
+Frontend
+Navigation.
+Form validation.
+Authentication states.
+Responsive layouts.
+Dashboard access.
+Loading and error states.
+Backend
+API validation.
+Authentication.
+Authorization.
+Property CRUD.
+Search and filtering.
+Booking workflows.
+Inventory conflicts.
+Payment verification.
+Reviews.
+Ownership restrictions.
+Database
+Migrations.
+Relationships.
+Constraints.
+Persistence.
+Transaction behavior.
+Geospatial queries.
+End-to-end
+Register.
+Login.
+Add property as owner.
+Approve property as admin.
+Search as customer.
+View property.
+Submit booking.
+Verify payment in test mode.
+Confirm booking.
+Review eligible completed booking.
+Never mark a test as passed unless it was actually executed.
+21. DEVELOPMENT ROADMAP
+Develop in this order.
+Phase 1 — Foundation
+Repository setup.
+Project architecture.
+Database connection.
+Migrations.
+Authentication.
+User profiles.
+Roles and permissions.
+Phase 2 — Property management
+Owner onboarding.
+Property creation.
+Images.
+Rooms.
+Inventory.
+Admin verification.
+Phase 3 — Discovery
+Homepage.
+Search.
+Filters.
+Property details.
+Favourites.
+Maps.
+Phase 4 — Booking
+Availability.
+Inventory reservations.
+Booking workflow.
+Status history.
+Double-booking protection.
+Phase 5 — Payments
+Razorpay sandbox.
+Payment verification.
+Refunds.
+Invoices.
+Phase 6 — Communication
+Messaging.
+Enquiries.
+Notifications.
+Phase 7 — Trust and administration
+Reviews.
+Reports.
+Moderation.
+Admin operations.
+Phase 8 — Living ecosystem
+Roommate finder.
+Household management.
+Expenses.
+Maintenance.
+Phase 9 — Local services and owner analytics
+Phase 10 — AI intelligence features
+Do not skip dependencies or claim a later phase is complete while its prerequisites are missing.
+22. DEVELOPMENT RULES
+First inspect the existing project files and architecture.
+Preserve useful existing work.
+Do not overwrite or delete working files without a reason.
+Create a clear folder structure.
+Use reusable frontend components.
+Separate frontend, backend, database, and integration logic.
+Keep business logic out of UI components.
+Use environment variables for all secrets.
+Use real API and database integration.
+Never substitute mock data for real data without explicitly labeling it as development seed data.
+Do not use localStorage as the primary database.
+Do not expose database credentials to the frontend.
+Do not fake successful authentication, booking, payment, or verification.
+Do not build every module in one uncontrolled operation.
+Complete and test each phase before moving forward.
+Keep documentation updated.
+Maintain a clear implementation checklist.
+Explain important architectural decisions before making major changes.
+23. FIRST TASK — INSPECT AND PLAN
+Before implementing features:
+Inspect the Google AI Studio project and current files.
+Identify the existing frontend and backend runtime.
+Confirm the database connection status.
+Identify available environment variables without exposing their values.
+Check whether Firebase, Supabase, and other integrations are configured.
+Identify any architectural conflicts or missing dependencies.
+Propose the final folder structure.
+Create a phased implementation checklist.
+Identify the first phase that can safely be implemented.
+Do not claim any integration is connected unless it has been tested.
+Do not start by generating all pages with fake data. Start with the foundation and build the real application incrementally.
+24. EXPECTED RESULT
+The final product must be a working StayFinder full-stack website with:
+Professional responsive UI.
+Real user authentication.
+Real persistent PostgreSQL database.
+Working property discovery.
+Owner property management.
+Real booking and availability logic.
+Secure payment integration.
+Customer and owner dashboards.
+Admin dashboard.
+Communication and notifications.
+Secure APIs.
+Testing and documentation.
+Deployment-ready configuration.
+Your role is to act as my senior technical development partner. I am the product owner.
+For each phase:
+Explain what you are implementing.
+Explain why it is required.
+Show which files are created or modified.
+Implement the functionality.
+Run relevant tests.
+Report actual results.
+List remaining issues.
+Ask for approval before major architectural changes.
+Begin with Phase 1. Do not skip directly to the UI or pretend the entire application is complete.# STAYFINDER — PROPERTIES PAGE UI/UX IMPLEMENTATION PROMPT
+Act as a Senior UI/UX Designer and Senior Frontend Engineer.
+I have provided a reference screenshot. I want you to recreate its layout as closely as possible for the StayFinder website, while applying StayFinder's Midnight Graphite dark theme.
+IMPORTANT: The screenshot is the design blueprint. Do not invent a different layout, dashboard structure, or visual arrangement.
+1. PRIMARY OBJECTIVE
+Recreate the reference screenshot as the StayFinder Properties Management page.
+Preserve:
+Overall page composition.
+Left navigation sidebar.
+Top header.
+Property search bar.
+Property listing cards.
+Right-side filter drawer.
+Card dimensions and spacing.
+Filter arrangement.
+Buttons and controls.
+Information hierarchy.
+Alignment and proportions.
+Transform only the visual styling, branding, content, and functionality to match StayFinder.
+2. DESIGN SYSTEM — MIDNIGHT GRAPHITE
+Use this design palette:
+Main background: #101318
+Sidebar background: #151A22
+Card background: #1B222D
+Secondary surface: #202936
+Borders: #303A49
+Primary blue: #3B82F6
+Primary hover: #2563EB
+Main text: #F8FAFC
+Secondary text: #A1AAB8
+Muted text: #737F90
+Input background: #151C26
+Success status: muted accessible green, used sparingly.
+Error status: accessible red, used sparingly.
+Design requirements:
+Dark-first experience.
+Premium real estate SaaS appearance.
+Clean typography.
+Subtle borders.
+Rounded corners.
+Consistent spacing.
+Restrained shadows.
+Smooth interactions.
+Strong readability and accessibility.
+Do not use dominant green backgrounds or green primary buttons.
+3. LEFT SIDEBAR
+Recreate the reference screenshot's fixed vertical sidebar.
+StayFinder branding at the top.
+Navigation items in this order:
+Dashboard
+Analytics
+Outreach
+Buyers
+Properties
+Inquiries
+Offers
+Settings
+Requirements:
+Use professional Lucide icons.
+Properties must be the active navigation item.
+Active item has a blue background or blue-accented surface.
+Other items use muted text and icons.
+Add hover effects.
+Add a user profile section at the bottom with profile picture, name, email, and account menu.
+Sidebar should remain visually consistent across the owner dashboard.
+Do not remove any navigation items.
+4. TOP HEADER
+Recreate the header shown in the screenshot.
+Include:
+Current page title: Properties.
+Global search input.
+Notification icon.
+Quick-action icon if appropriate.
+User profile/avatar.
+User dropdown menu.
+Keep the header compact and aligned with the reference.
+5. MAIN PROPERTY LISTING AREA
+Place the property listing area in the center.
+At the top:
+Property-specific search input.
+Advanced Filters button.
+Create Property button.
+Below the toolbar, display property cards vertically, matching the screenshot.
+Each property card must include:
+LEFT:
+Property thumbnail.
+Property availability/status badge.
+MIDDLE:
+Property name.
+Full or formatted location.
+Property type.
+Room count.
+Bedroom count.
+Bathroom count.
+Built-up area.
+Listing or creation date.
+Owner information where relevant.
+RIGHT:
+Displayed price.
+Relevant action menu.
+Card requirements:
+Use a horizontal card layout.
+Keep the image on the left.
+Keep property information in the center.
+Keep price and actions aligned consistently.
+Use subtle card borders.
+Add a hover state.
+Clicking a card opens its property details or editing page.
+Add pagination or load-more functionality.
+Do not use fabricated property data in production. Retrieve listings from the authenticated owner's backend records.
+For development, if the database is empty, show a professionally designed empty state and a Create Property action. Clearly label any seed data as development-only.
+6. RIGHT-SIDE ADVANCED FILTER PANEL
+This is a critical part of the design.
+Recreate the screenshot's right-side filter drawer.
+It should:
+Slide in from the right.
+Overlay the listing area.
+Have a dark surface.
+Have a subtle border or shadow.
+Include a close button.
+Keep the filter sections vertically organized.
+Support scrolling on smaller screens.
+Filter section 1 — Property Type
+Provide selectable options:
+House
+Apartment
+Commercial
+Land / Plot
+PG
+Hostel
+Private Room
+Shared Room
+Studio
+Co-living
+Use the two-column button grid from the reference screenshot.
+Filter section 2 — Rental Period
+Options:
+Daily
+Monthly
+Yearly
+Use a segmented control similar to the reference.
+Filter section 3 — Price Range
+Provide a dual-ended range slider.
+Requirements:
+Minimum and maximum price.
+Display current selected values.
+Currency: INR (₹).
+Values must be configurable.
+Prevent minimum from exceeding maximum.
+Filter section 4 — Rooms
+Provide controls for:
+Bedrooms.
+Bathrooms.
+Use minus and plus controls as in the reference.
+Filter section 5 — Property Area
+Provide a range slider:
+Minimum square feet.
+Maximum square feet.
+Display selected values.
+Filter section 6 — Amenities
+Provide selectable checkboxes:
+Parking.
+Pet allowed.
+Wi-Fi.
+Furnished.
+Air conditioning.
+Security.
+Power backup.
+Food available.
+Laundry.
+Attached bathroom.
+Filter footer
+At the bottom of the filter drawer, include:
+Reset button.
+Apply Filters button.
+The footer should remain accessible when the filter contents scroll.
+7. INTERACTIONS AND FUNCTIONALITY
+Every visible control must work.
+Implement:
+Sidebar navigation.
+Global search.
+Property search.
+Advanced filter drawer open/close.
+Property type selection.
+Rental period selection.
+Price range selection.
+Bedroom and bathroom counters.
+Area range selection.
+Amenity selection.
+Reset filters.
+Apply filters.
+Property card click.
+Create Property navigation.
+User profile menu.
+Notifications menu.
+Pagination or load more.
+Filters must update the actual property results.
+Use controlled React state and proper form handling.
+Do not create decorative buttons that do nothing.
+8. DATABASE AND BACKEND INTEGRATION
+Connect the page to the existing StayFinder backend and Supabase PostgreSQL database.
+Use the existing project architecture.
+Retrieve properties based on:
+Authenticated owner ID.
+Search term.
+Property type.
+Rental period.
+Price range.
+Bedrooms.
+Bathrooms.
+Property area.
+Selected amenities.
+Listing status.
+Implement filtering through backend API endpoints with validation and pagination.
+Suggested endpoint:
+GET /api/v1/owner/properties
+Support query parameters for search, property type, rental period, minimum price, maximum price, bedrooms, bathrooms, area, amenities, page, and page size.
+Requirements:
+Never expose database credentials to the frontend.
+Verify the authenticated user.
+Ensure owners can only retrieve their authorized properties.
+Use server-side filtering.
+Handle loading, empty, and error states.
+Keep filters synchronized with the results.
+Do not substitute mock data for database records.
+If backend endpoints are missing, implement them using the existing backend architecture rather than bypassing the backend.
+9. RESPONSIVE DESIGN
+Desktop:
+Fixed left sidebar.
+Main listing area.
+Right filter drawer.
+Similar proportions to the reference screenshot.
+Tablet:
+Compact sidebar.
+Responsive property cards.
+Filter drawer remains usable.
+Mobile:
+Collapsible navigation.
+Stacked property cards.
+Filter drawer becomes a full-screen or near-full-screen overlay.
+Touch-friendly controls.
+No horizontal overflow.
+Do not compromise the desktop reference layout to achieve mobile responsiveness.
+10. TECHNICAL REQUIREMENTS
+React.
+TypeScript.
+Tailwind CSS.
+Reusable components.
+Lucide icons.
+Existing routing system.
+Existing API client.
+Existing authentication system.
+Proper TypeScript interfaces.
+Accessible labels.
+Keyboard navigation.
+Loading skeletons.
+Error handling.
+Responsive layouts.
+Suggested components:
+OwnerSidebar
+OwnerHeader
+PropertyToolbar
+PropertyCard
+PropertyList
+AdvancedFilterDrawer
+PropertyTypeSelector
+RentalPeriodSelector
+PriceRangeSlider
+RoomCounter
+AreaRangeSlider
+AmenitySelector
+Pagination
+EmptyPropertyState
+Keep the code modular and maintainable.
+11. STRICT IMPLEMENTATION RULES
+Inspect the existing StayFinder project before editing.
+Use the uploaded screenshot as the visual reference.
+Do not redesign the layout.
+Do not replace the page with a generic admin dashboard.
+Do not change the overall component arrangement.
+Do not remove sidebar navigation items.
+Do not introduce a different color palette.
+Do not break existing authentication or routing.
+Do not create fake database success responses.
+Do not overwrite unrelated working pages.
+Reuse existing shared components where appropriate.
+Keep the implementation consistent with the existing StayFinder architecture.
+12. ACCEPTANCE CRITERIA
+The implementation is complete only when:
+The page closely matches the reference screenshot's layout.
+The Midnight Graphite theme is consistently applied.
+The left sidebar and top header work.
+Property cards display actual database records.
+The filter drawer opens and closes.
+Every filter works.
+Applying filters updates backend results.
+Reset restores the default filter state.
+Owners see only their authorized properties.
+Create Property navigates to a functional creation workflow.
+Loading, error, and empty states work.
+The page is responsive.
+No existing application functionality is broken.
+13. FINAL INSTRUCTION
+First inspect the existing project.
+Then implement the StayFinder Properties page using the exact reference layout and Midnight Graphite styling.
+After implementation:
+List all files created or modified.
+Explain the components.
+Explain the API integration.
+Run available tests.
+Report actual test results.
+Identify unfinished features.
+Do not claim completion unless the acceptance criteria have been tested.
+The final result must look like the uploaded reference screenshot in structure and composition, but visually belong to StayFinder's Midnight Graphite brand.

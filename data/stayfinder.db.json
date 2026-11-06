@@ -1,0 +1,936 @@
+{
+  "properties": [
+    {
+      "id": "vizag-prop-1",
+      "title": "MVP Colony Sector 6 Luxury 2 BHK Flat",
+      "description": "Well-ventilated East-facing 2 BHK flat in MVP Colony Sector 6. 5 minutes from Apollo Clinic, AS Raja College, and Shivaji Park. 24/7 municipal water and power backup.",
+      "propertyType": "Apartment",
+      "rentalPeriod": "Monthly",
+      "status": "Published",
+      "isVerified": true,
+      "price": 18500,
+      "pricePerUnit": "/mo",
+      "securityDeposit": 37000,
+      "utilityCharges": {
+        "maintenanceCharges": 1500,
+        "electricityCharges": "Sub-meter billing at ₹8.5/unit",
+        "waterCharges": "Included in rent",
+        "otherAdditionalFees": 0
+      },
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "balconies": 2,
+      "totalRooms": 4,
+      "areaSqFt": 1250,
+      "furnishingStatus": "Semi Furnished",
+      "floorNumber": 3,
+      "totalFloors": 5,
+      "parkingAvailability": "Car & 2-Wheeler",
+      "liftAvailable": true,
+      "propertyAge": "1-5 years",
+      "genderPreference": "All",
+      "tenantPreferences": {
+        "boysAllowed": true,
+        "girlsAllowed": true,
+        "familiesAllowed": true,
+        "studentsAllowed": true,
+        "professionalsAllowed": true,
+        "bachelorFriendly": true,
+        "petsAllowed": false,
+        "smokingAllowed": false
+      },
+      "foodAvailable": false,
+      "thumbnailUrl": "/src/assets/images/stay_modern_apartment_1793966389648.jpg",
+      "images": [
+        "/src/assets/images/stay_modern_apartment_1793966389648.jpg"
+      ],
+      "location": {
+        "address": "Plot 142, Sector 6, MVP Colony",
+        "locality": "MVP Colony",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "pincode": "530017",
+        "latitude": 17.7423,
+        "longitude": 83.3338,
+        "landmark": "Near AS Raja College Grounds",
+        "nearbyColleges": [
+          "AS Raja College",
+          "Andhra University (10 mins)"
+        ],
+        "nearbyTechParks": [
+          "IT SEZ Rushikonda (12 mins)"
+        ]
+      },
+      "amenities": [
+        "Wi-Fi",
+        "Parking",
+        "Security",
+        "Power backup",
+        "Attached bathroom",
+        "Lift",
+        "Geyser",
+        "Wardrobe"
+      ],
+      "roomTypes": [
+        {
+          "id": "rt-mvp-1",
+          "name": "Entire 2BHK Apartment",
+          "type": "Entire Flat",
+          "priceMonthly": 18500,
+          "securityDeposit": 37000,
+          "capacity": 4,
+          "totalRooms": 1,
+          "availableRooms": 1,
+          "hasAttachedBath": true,
+          "hasBalcony": true,
+          "isAC": true
+        }
+      ],
+      "houseRules": [
+        "Quiet hours after 10:30 PM",
+        "Family-friendly gated society",
+        "Timely rent payment by 5th"
+      ],
+      "ownerId": "owner-vizag-1",
+      "ownerName": "Suresh Varma",
+      "ownerPhone": "+91 94401 23456",
+      "ownerEmail": "suresh.varma@stayfinder.in",
+      "rating": 4.9,
+      "reviewsCount": 14,
+      "createdAt": "2026-10-15T09:00:00.000Z",
+      "updatedAt": "2026-11-05T10:00:00.000Z"
+    },
+    {
+      "id": "vizag-prop-2",
+      "title": "Rushikonda IT Hills Techie & Student Co-living Studio",
+      "description": "Modern sea-view studio apartment on Rushikonda IT SEZ road. Just 2 mins from Gitam University, Millenium Tower, and Rushikonda Beach. High-speed fibre internet included.",
+      "propertyType": "Co-living",
+      "rentalPeriod": "Monthly",
+      "status": "Published",
+      "isVerified": true,
+      "price": 12000,
+      "pricePerUnit": "/mo",
+      "securityDeposit": 24000,
+      "utilityCharges": {
+        "maintenanceCharges": 1000,
+        "electricityCharges": "As per individual meter",
+        "waterCharges": "Included (24/7 RO water)",
+        "foodCharges": 3500
+      },
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "balconies": 1,
+      "totalRooms": 2,
+      "areaSqFt": 550,
+      "furnishingStatus": "Fully Furnished",
+      "floorNumber": 4,
+      "totalFloors": 6,
+      "parkingAvailability": "2-Wheeler Only",
+      "liftAvailable": true,
+      "propertyAge": "0-1 year (Brand New)",
+      "genderPreference": "All",
+      "tenantPreferences": {
+        "boysAllowed": true,
+        "girlsAllowed": true,
+        "familiesAllowed": false,
+        "studentsAllowed": true,
+        "professionalsAllowed": true,
+        "bachelorFriendly": true,
+        "petsAllowed": false,
+        "smokingAllowed": false
+      },
+      "foodAvailable": true,
+      "foodType": "Veg & Non-Veg",
+      "thumbnailUrl": "/src/assets/images/stay_coliving_room_1793966390947.jpg",
+      "images": [
+        "/src/assets/images/stay_coliving_room_1793966390947.jpg"
+      ],
+      "location": {
+        "address": "Hill No 2, IT SEZ Layout, Rushikonda",
+        "locality": "Rushikonda",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "pincode": "530045",
+        "latitude": 17.782,
+        "longitude": 83.385,
+        "landmark": "Behind Gitam University Campus Gate 3",
+        "nearbyColleges": [
+          "Gitam Deemed University"
+        ],
+        "nearbyTechParks": [
+          "Millenium IT Tower",
+          "Wipro IT SEZ",
+          "Tech Mahindra"
+        ]
+      },
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Furnished",
+        "Attached bathroom",
+        "Food available",
+        "Laundry",
+        "Security",
+        "Power backup",
+        "CCTV"
+      ],
+      "roomTypes": [
+        {
+          "id": "rt-rushi-1",
+          "name": "Private AC Tech Studio",
+          "type": "Studio",
+          "priceMonthly": 12000,
+          "securityDeposit": 24000,
+          "capacity": 1,
+          "totalRooms": 6,
+          "availableRooms": 2,
+          "hasAttachedBath": true,
+          "hasBalcony": true,
+          "isAC": true
+        }
+      ],
+      "houseRules": [
+        "Biometric night entry",
+        "Visitors permitted in lobby",
+        "Strict cleanliness protocol"
+      ],
+      "ownerId": "owner-vizag-1",
+      "ownerName": "Suresh Varma",
+      "ownerPhone": "+91 94401 23456",
+      "ownerEmail": "suresh.varma@stayfinder.in",
+      "rating": 4.8,
+      "reviewsCount": 29,
+      "createdAt": "2026-09-28T11:30:00.000Z",
+      "updatedAt": "2026-11-04T16:20:00.000Z"
+    },
+    {
+      "id": "vizag-prop-3",
+      "title": "Madhurawada Mithilapuri 3 BHK Independent House",
+      "description": "Spacious independent house with private car porch and garden in Mithilapuri VUDA Colony, Madhurawada. Peaceful residential surroundings, close to D-Mart, St. Ann’s School.",
+      "propertyType": "Independent House",
+      "rentalPeriod": "Monthly",
+      "status": "Published",
+      "isVerified": true,
+      "price": 22000,
+      "pricePerUnit": "/mo",
+      "securityDeposit": 44000,
+      "utilityCharges": {
+        "maintenanceCharges": 0,
+        "electricityCharges": "Government APEPDCL actual meter bill",
+        "waterCharges": "Own borewell & GVMC connection",
+        "otherAdditionalFees": 0
+      },
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "balconies": 2,
+      "totalRooms": 6,
+      "areaSqFt": 1850,
+      "furnishingStatus": "Semi Furnished",
+      "floorNumber": 1,
+      "totalFloors": 2,
+      "parkingAvailability": "Car & 2-Wheeler",
+      "liftAvailable": false,
+      "propertyAge": "1-5 years",
+      "genderPreference": "Family",
+      "tenantPreferences": {
+        "boysAllowed": false,
+        "girlsAllowed": false,
+        "familiesAllowed": true,
+        "studentsAllowed": false,
+        "professionalsAllowed": true,
+        "bachelorFriendly": false,
+        "petsAllowed": true,
+        "smokingAllowed": false
+      },
+      "foodAvailable": false,
+      "thumbnailUrl": "/src/assets/images/stay_modern_apartment_1793966389648.jpg",
+      "images": [
+        "/src/assets/images/stay_modern_apartment_1793966389648.jpg"
+      ],
+      "location": {
+        "address": "House 84, Phase 2, Mithilapuri VUDA Colony",
+        "locality": "Madhurawada",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "pincode": "530048",
+        "latitude": 17.8188,
+        "longitude": 83.3551,
+        "landmark": "Near Cricket Stadium & D-Mart",
+        "nearbyColleges": [
+          "Gayatri Vidya Parishad College (GVP)"
+        ]
+      },
+      "amenities": [
+        "Parking",
+        "Security",
+        "Power backup",
+        "Water supply",
+        "Pet allowed",
+        "Attached bathroom",
+        "Kitchen",
+        "Geyser"
+      ],
+      "roomTypes": [
+        {
+          "id": "rt-madh-1",
+          "name": "Entire 3 BHK Ground Floor House",
+          "type": "Entire Flat",
+          "priceMonthly": 22000,
+          "securityDeposit": 44000,
+          "capacity": 6,
+          "totalRooms": 1,
+          "availableRooms": 1,
+          "hasAttachedBath": true,
+          "hasBalcony": true,
+          "isAC": false
+        }
+      ],
+      "houseRules": [
+        "Pets welcome",
+        "Family lease agreement",
+        "Terrace access allowed"
+      ],
+      "ownerId": "owner-vizag-2",
+      "ownerName": "K. Lakshmi Prasad",
+      "ownerPhone": "+91 98852 98765",
+      "ownerEmail": "lakshmi.prasad@stayfinder.in",
+      "rating": 4.9,
+      "reviewsCount": 8,
+      "createdAt": "2026-10-02T14:00:00.000Z",
+      "updatedAt": "2026-11-03T11:00:00.000Z"
+    },
+    {
+      "id": "vizag-prop-4",
+      "title": "Seethammadhara North Ext. Girls Hostel & PG",
+      "description": "Safe and secure girls accommodation in Seethammadhara North Extension. Homemade Andhra meals included, biometric access, warden on site, and study tables.",
+      "propertyType": "Girls Accommodation",
+      "rentalPeriod": "Monthly",
+      "status": "Published",
+      "isVerified": true,
+      "price": 8500,
+      "pricePerUnit": "/mo",
+      "securityDeposit": 15000,
+      "utilityCharges": {
+        "maintenanceCharges": 500,
+        "electricityCharges": "Included in rent",
+        "waterCharges": "Included (24/7 hot water)",
+        "foodCharges": 0
+      },
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "balconies": 2,
+      "totalRooms": 8,
+      "areaSqFt": 2100,
+      "furnishingStatus": "Fully Furnished",
+      "floorNumber": 2,
+      "totalFloors": 4,
+      "parkingAvailability": "2-Wheeler Only",
+      "liftAvailable": true,
+      "propertyAge": "1-5 years",
+      "genderPreference": "Female Only",
+      "tenantPreferences": {
+        "boysAllowed": false,
+        "girlsAllowed": true,
+        "familiesAllowed": false,
+        "studentsAllowed": true,
+        "professionalsAllowed": true,
+        "bachelorFriendly": true,
+        "petsAllowed": false,
+        "smokingAllowed": false
+      },
+      "foodAvailable": true,
+      "foodType": "Veg & Non-Veg",
+      "thumbnailUrl": "/src/assets/images/stay_student_pg_1793966391009.jpg",
+      "images": [
+        "/src/assets/images/stay_student_pg_1793966391009.jpg"
+      ],
+      "location": {
+        "address": "Plot 31, North Extension, Seethammadhara",
+        "locality": "Seethammadhara",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "pincode": "530013",
+        "latitude": 17.738,
+        "longitude": 83.315,
+        "landmark": "Near Satyam Junction & HB Colony",
+        "nearbyColleges": [
+          "St. Joseph College for Women",
+          "Andhra University"
+        ]
+      },
+      "amenities": [
+        "Wi-Fi",
+        "Food available",
+        "Laundry",
+        "Security",
+        "CCTV",
+        "Power backup",
+        "Attached bathroom",
+        "Geyser",
+        "Bed",
+        "Wardrobe"
+      ],
+      "roomTypes": [
+        {
+          "id": "rt-seetha-1",
+          "name": "Twin Sharing Room with AC",
+          "type": "Double",
+          "priceMonthly": 8500,
+          "securityDeposit": 15000,
+          "capacity": 2,
+          "totalRooms": 8,
+          "availableRooms": 3,
+          "hasAttachedBath": true,
+          "hasBalcony": true,
+          "isAC": true
+        },
+        {
+          "id": "rt-seetha-2",
+          "name": "Single Private Executive Room",
+          "type": "Single",
+          "priceMonthly": 13500,
+          "securityDeposit": 25000,
+          "capacity": 1,
+          "totalRooms": 4,
+          "availableRooms": 1,
+          "hasAttachedBath": true,
+          "hasBalcony": false,
+          "isAC": true
+        }
+      ],
+      "houseRules": [
+        "Entry before 9:30 PM",
+        "No male visitors inside rooms",
+        "Wholesome atmosphere"
+      ],
+      "ownerId": "owner-vizag-3",
+      "ownerName": "Radha Devi",
+      "ownerPhone": "+91 891 275 4321",
+      "ownerEmail": "radha.devi@stayfinder.in",
+      "rating": 4.7,
+      "reviewsCount": 36,
+      "createdAt": "2026-08-14T08:00:00.000Z",
+      "updatedAt": "2026-10-30T15:45:00.000Z"
+    },
+    {
+      "id": "vizag-prop-5",
+      "title": "Beach Road Pandurangapuram Sea-Facing 3 BHK Flat",
+      "description": "Unobstructed panoramic Bay of Bengal sea views from every room. Premium high-rise on Beach Road, walking distance to Submarine Museum, RK Beach, and Novotel Hotel.",
+      "propertyType": "Apartment",
+      "rentalPeriod": "Monthly",
+      "status": "Published",
+      "isVerified": true,
+      "price": 42000,
+      "pricePerUnit": "/mo",
+      "securityDeposit": 120000,
+      "utilityCharges": {
+        "maintenanceCharges": 3500,
+        "electricityCharges": "As per APEPDCL meter",
+        "waterCharges": "Included",
+        "otherAdditionalFees": 0
+      },
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "balconies": 3,
+      "totalRooms": 6,
+      "areaSqFt": 2250,
+      "furnishingStatus": "Fully Furnished",
+      "floorNumber": 7,
+      "totalFloors": 12,
+      "parkingAvailability": "Car & 2-Wheeler",
+      "liftAvailable": true,
+      "propertyAge": "1-5 years",
+      "genderPreference": "All",
+      "tenantPreferences": {
+        "boysAllowed": true,
+        "girlsAllowed": true,
+        "familiesAllowed": true,
+        "studentsAllowed": false,
+        "professionalsAllowed": true,
+        "bachelorFriendly": true,
+        "petsAllowed": true,
+        "smokingAllowed": false
+      },
+      "foodAvailable": false,
+      "thumbnailUrl": "/src/assets/images/stay_urban_studio_1793966392045.jpg",
+      "images": [
+        "/src/assets/images/stay_urban_studio_1793966392045.jpg"
+      ],
+      "location": {
+        "address": "Tower 2, Ocean Crest, Beach Road, Pandurangapuram",
+        "locality": "Beach Road",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "pincode": "530003",
+        "latitude": 17.718,
+        "longitude": 83.327,
+        "landmark": "Near Kurusura Submarine Museum",
+        "nearbyColleges": [
+          "Andhra University South Campus"
+        ]
+      },
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Parking",
+        "Security",
+        "Power backup",
+        "Lift",
+        "Pet allowed",
+        "CCTV",
+        "Attached bathroom",
+        "Kitchen"
+      ],
+      "roomTypes": [
+        {
+          "id": "rt-beach-1",
+          "name": "Entire 3 BHK Sea-View Suite",
+          "type": "Entire Flat",
+          "priceMonthly": 42000,
+          "securityDeposit": 120000,
+          "capacity": 6,
+          "totalRooms": 1,
+          "availableRooms": 1,
+          "hasAttachedBath": true,
+          "hasBalcony": true,
+          "isAC": true
+        }
+      ],
+      "houseRules": [
+        "Residential bylaws apply",
+        "Pets allowed with prior deposit"
+      ],
+      "ownerId": "owner-vizag-1",
+      "ownerName": "Suresh Varma",
+      "ownerPhone": "+91 94401 23456",
+      "ownerEmail": "suresh.varma@stayfinder.in",
+      "rating": 5,
+      "reviewsCount": 18,
+      "createdAt": "2026-09-10T12:00:00.000Z",
+      "updatedAt": "2026-11-04T12:00:00.000Z"
+    },
+    {
+      "id": "vizag-prop-6",
+      "title": "Gajuwaka Steel Plant Junction 2 BHK Flat",
+      "description": "Convenient 2 BHK rental home in Gajuwaka near Old Post Office road. Ideal for employees of Vizag Steel Plant (RINL), NTPC, BHEL, and coastal industries.",
+      "propertyType": "Apartment",
+      "rentalPeriod": "Monthly",
+      "status": "Published",
+      "isVerified": true,
+      "price": 13500,
+      "pricePerUnit": "/mo",
+      "securityDeposit": 27000,
+      "utilityCharges": {
+        "maintenanceCharges": 800,
+        "electricityCharges": "As per meter",
+        "waterCharges": "Included",
+        "otherAdditionalFees": 0
+      },
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "balconies": 1,
+      "totalRooms": 4,
+      "areaSqFt": 1100,
+      "furnishingStatus": "Semi Furnished",
+      "floorNumber": 2,
+      "totalFloors": 4,
+      "parkingAvailability": "Car & 2-Wheeler",
+      "liftAvailable": true,
+      "propertyAge": "5-10 years",
+      "genderPreference": "All",
+      "tenantPreferences": {
+        "boysAllowed": true,
+        "girlsAllowed": true,
+        "familiesAllowed": true,
+        "studentsAllowed": true,
+        "professionalsAllowed": true,
+        "bachelorFriendly": true,
+        "petsAllowed": false,
+        "smokingAllowed": false
+      },
+      "foodAvailable": false,
+      "thumbnailUrl": "/src/assets/images/stay_modern_apartment_1793966389648.jpg",
+      "images": [
+        "/src/assets/images/stay_modern_apartment_1793966389648.jpg"
+      ],
+      "location": {
+        "address": "Main Road, Old Post Office, Gajuwaka",
+        "locality": "Gajuwaka",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "pincode": "530026",
+        "latitude": 17.6908,
+        "longitude": 83.21,
+        "landmark": "Near Steel Plant Main Arch",
+        "nearbyTechParks": [
+          "Vizag Steel Plant (RINL)",
+          "Pharma City (20 mins)"
+        ]
+      },
+      "amenities": [
+        "Parking",
+        "Lift",
+        "Security",
+        "Power backup",
+        "Attached bathroom",
+        "Wardrobe"
+      ],
+      "roomTypes": [
+        {
+          "id": "rt-gaju-1",
+          "name": "Standard 2 BHK Unit",
+          "type": "Entire Flat",
+          "priceMonthly": 13500,
+          "securityDeposit": 27000,
+          "capacity": 4,
+          "totalRooms": 1,
+          "availableRooms": 1,
+          "hasAttachedBath": true,
+          "hasBalcony": true,
+          "isAC": false
+        }
+      ],
+      "houseRules": [
+        "Standard society rules",
+        "Notice period of 1 month"
+      ],
+      "ownerId": "owner-vizag-2",
+      "ownerName": "K. Lakshmi Prasad",
+      "ownerPhone": "+91 98852 98765",
+      "ownerEmail": "lakshmi.prasad@stayfinder.in",
+      "rating": 4.6,
+      "reviewsCount": 11,
+      "createdAt": "2026-10-18T10:00:00.000Z",
+      "updatedAt": "2026-11-05T09:00:00.000Z"
+    },
+    {
+      "id": "vizag-prop-7",
+      "title": "Siripuram Central Executive 1 BHK Studio",
+      "description": "Located in the heart of Vizag at Siripuram. Walkable to Dutt Island shopping complex, VIP Road cafes, and Andhra University. Tastefully furnished with compact kitchen.",
+      "propertyType": "Studio",
+      "rentalPeriod": "Monthly",
+      "status": "Published",
+      "isVerified": true,
+      "price": 16000,
+      "pricePerUnit": "/mo",
+      "securityDeposit": 32000,
+      "utilityCharges": {
+        "maintenanceCharges": 1200,
+        "electricityCharges": "Sub-meter at actuals",
+        "waterCharges": "Included",
+        "otherAdditionalFees": 0
+      },
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "balconies": 1,
+      "totalRooms": 2,
+      "areaSqFt": 620,
+      "furnishingStatus": "Fully Furnished",
+      "floorNumber": 3,
+      "totalFloors": 5,
+      "parkingAvailability": "2-Wheeler Only",
+      "liftAvailable": true,
+      "propertyAge": "1-5 years",
+      "genderPreference": "All",
+      "tenantPreferences": {
+        "boysAllowed": true,
+        "girlsAllowed": true,
+        "familiesAllowed": false,
+        "studentsAllowed": true,
+        "professionalsAllowed": true,
+        "bachelorFriendly": true,
+        "petsAllowed": false,
+        "smokingAllowed": false
+      },
+      "foodAvailable": false,
+      "thumbnailUrl": "/src/assets/images/stay_coliving_room_1793966390947.jpg",
+      "images": [
+        "/src/assets/images/stay_coliving_room_1793966390947.jpg"
+      ],
+      "location": {
+        "address": "Opp. Dutt Island, VIP Road, Siripuram",
+        "locality": "Siripuram",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "pincode": "530003",
+        "latitude": 17.724,
+        "longitude": 83.318,
+        "landmark": "Next to Dutt Island Mall",
+        "nearbyColleges": [
+          "Andhra University Main Campus (3 mins)"
+        ]
+      },
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Furnished",
+        "Attached bathroom",
+        "Lift",
+        "Security",
+        "Power backup",
+        "Geyser"
+      ],
+      "roomTypes": [
+        {
+          "id": "rt-siri-1",
+          "name": "Executive Studio Unit",
+          "type": "Studio",
+          "priceMonthly": 16000,
+          "securityDeposit": 32000,
+          "capacity": 2,
+          "totalRooms": 2,
+          "availableRooms": 1,
+          "hasAttachedBath": true,
+          "hasBalcony": true,
+          "isAC": true
+        }
+      ],
+      "houseRules": [
+        "ID verification mandatory",
+        "Quiet professional living"
+      ],
+      "ownerId": "owner-vizag-1",
+      "ownerName": "Suresh Varma",
+      "ownerPhone": "+91 94401 23456",
+      "ownerEmail": "suresh.varma@stayfinder.in",
+      "rating": 4.9,
+      "reviewsCount": 22,
+      "createdAt": "2026-10-05T07:30:00.000Z",
+      "updatedAt": "2026-11-02T13:15:00.000Z"
+    },
+    {
+      "id": "vizag-prop-8",
+      "title": "Yendada Sea-Breeze 2 BHK Corner Apartment",
+      "description": "Located in scenic Yendada near Sagar Nagar beach road junction. Beautiful valley and sea breezes, quiet gated community, and fast commute to both Siripuram and IT SEZ.",
+      "propertyType": "Apartment",
+      "rentalPeriod": "Monthly",
+      "status": "Pending verification",
+      "isVerified": false,
+      "price": 15000,
+      "pricePerUnit": "/mo",
+      "securityDeposit": 30000,
+      "utilityCharges": {
+        "maintenanceCharges": 1200,
+        "electricityCharges": "As per meter",
+        "waterCharges": "Included",
+        "otherAdditionalFees": 0
+      },
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "balconies": 2,
+      "totalRooms": 4,
+      "areaSqFt": 1180,
+      "furnishingStatus": "Semi Furnished",
+      "floorNumber": 2,
+      "totalFloors": 5,
+      "parkingAvailability": "Car & 2-Wheeler",
+      "liftAvailable": true,
+      "propertyAge": "1-5 years",
+      "genderPreference": "All",
+      "tenantPreferences": {
+        "boysAllowed": true,
+        "girlsAllowed": true,
+        "familiesAllowed": true,
+        "studentsAllowed": true,
+        "professionalsAllowed": true,
+        "bachelorFriendly": true,
+        "petsAllowed": true,
+        "smokingAllowed": false
+      },
+      "foodAvailable": false,
+      "thumbnailUrl": "/src/assets/images/stay_urban_studio_1793966392045.jpg",
+      "images": [
+        "/src/assets/images/stay_urban_studio_1793966392045.jpg"
+      ],
+      "location": {
+        "address": "Road No 4, Law College Road, Yendada",
+        "locality": "Yendada",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "pincode": "530045",
+        "latitude": 17.769,
+        "longitude": 83.359,
+        "landmark": "Near DBR Enclave",
+        "nearbyColleges": [
+          "DSNLU Law University",
+          "Gitam University"
+        ]
+      },
+      "amenities": [
+        "Parking",
+        "Security",
+        "Lift",
+        "Power backup",
+        "Attached bathroom",
+        "Pet allowed"
+      ],
+      "roomTypes": [
+        {
+          "id": "rt-yen-1",
+          "name": "2 BHK Corner Flat",
+          "type": "Entire Flat",
+          "priceMonthly": 15000,
+          "securityDeposit": 30000,
+          "capacity": 4,
+          "totalRooms": 1,
+          "availableRooms": 1,
+          "hasAttachedBath": true,
+          "hasBalcony": true,
+          "isAC": false
+        }
+      ],
+      "houseRules": [
+        "Pets allowed",
+        "Family / Working professional preferred"
+      ],
+      "ownerId": "owner-vizag-1",
+      "ownerName": "Suresh Varma",
+      "ownerPhone": "+91 94401 23456",
+      "ownerEmail": "suresh.varma@stayfinder.in",
+      "rating": 4.7,
+      "reviewsCount": 5,
+      "createdAt": "2026-11-04T10:00:00.000Z",
+      "updatedAt": "2026-11-06T08:00:00.000Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bk-1793969141310",
+      "propertyId": "vizag-prop-1",
+      "propertyTitle": "MVP Colony Sector 6 Luxury 2 BHK Flat",
+      "propertyThumbnail": "/src/assets/images/stay_modern_apartment_1793966389648.jpg",
+      "propertyLocation": "MVP Colony, Visakhapatnam",
+      "roomTypeId": "rt-mvp-1",
+      "roomTypeName": "Entire 2BHK Apartment",
+      "customerId": "owner-vizag-1",
+      "customerName": "Suresh Varma",
+      "customerEmail": "suresh.varma@stayfinder.in",
+      "customerPhone": "+91 94401 23456",
+      "checkInDate": "2026-12-01",
+      "stayDurationMonths": 6,
+      "guestsCount": 2,
+      "monthlyRent": 18500,
+      "securityDeposit": 37000,
+      "platformFee": 999,
+      "totalAmountDue": 56499,
+      "currency": "INR",
+      "status": "Cancelled",
+      "paymentStatus": "Paid",
+      "createdAt": "2026-11-06T12:45:41.310Z",
+      "statusHistory": [
+        {
+          "status": "Pending",
+          "timestamp": "2026-11-06T12:45:41.310Z",
+          "note": "Reservation lock acquired; awaiting payment verification"
+        },
+        {
+          "status": "Confirmed",
+          "timestamp": "2026-11-06T12:45:46.859Z",
+          "note": "Razorpay payment captured successfully (pay_test_123456)"
+        },
+        {
+          "status": "Cancelled",
+          "timestamp": "2026-11-06T12:45:56.555Z",
+          "note": "Tenant requested cancellation"
+        }
+      ],
+      "paymentId": "pay_test_123456"
+    }
+  ],
+  "reviews": [],
+  "roommates": [],
+  "expenses": [],
+  "maintenanceTickets": [],
+  "enquiries": [
+    {
+      "propertyId": "vizag-prop-1",
+      "propertyTitle": "MVP Colony Sector 6 Luxury 2 BHK Flat",
+      "propertyLocality": "MVP Colony",
+      "ownerId": "owner-vizag-1",
+      "customerId": "owner-vizag-1",
+      "customerName": "Kiran Kumar",
+      "customerPhone": "+91 98480 11223",
+      "customerEmail": "kiran.kumar@gmail.com",
+      "tenantType": "Working Professional",
+      "expectedMoveInDate": "2026-12-05",
+      "occupancyCount": 1,
+      "message": "Looking for 2BHK in MVP Colony. Can I visit tomorrow evening?",
+      "id": "enq-1793967901099",
+      "status": "New",
+      "createdAt": "2026-11-06T12:25:01.099Z"
+    },
+    {
+      "id": "enq-101",
+      "propertyId": "vizag-prop-1",
+      "propertyTitle": "MVP Colony Sector 6 Luxury 2 BHK Flat",
+      "propertyLocality": "MVP Colony",
+      "ownerId": "owner-vizag-1",
+      "customerId": "cust-vizag-1",
+      "customerName": "Rohan Sharma",
+      "customerPhone": "+91 99887 66554",
+      "customerEmail": "rohan.sharma@example.com",
+      "tenantType": "Working Professional",
+      "expectedMoveInDate": "2026-12-01",
+      "occupancyCount": 2,
+      "message": "Hello Mr. Varma, my colleague and I are working at Wipro IT SEZ. We love the MVP Sector 6 location and would like to schedule a physical visit this Saturday afternoon.",
+      "status": "New",
+      "createdAt": "2026-11-05T14:30:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "owner-vizag-1",
+      "name": "Suresh Varma",
+      "email": "suresh.varma@stayfinder.in",
+      "role": "owner",
+      "avatarUrl": "/src/assets/images/avatar_property_owner_1793966391994.jpg",
+      "phone": "+91 94401 23456",
+      "isVerifiedOwner": true
+    },
+    {
+      "id": "cust-vizag-1",
+      "name": "Rohan Sharma",
+      "email": "rohan.sharma@example.com",
+      "role": "customer",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "phone": "+91 99887 66554",
+      "isVerifiedOwner": false
+    },
+    {
+      "id": "admin-vizag-1",
+      "name": "StayFinder Admin",
+      "email": "admin@stayfinder.in",
+      "role": "admin",
+      "avatarUrl": "/src/assets/images/avatar_property_owner_1793966391994.jpg",
+      "phone": "+91 891 400 0000",
+      "isVerifiedOwner": true
+    }
+  ],
+  "offers": [
+    {
+      "id": "off-101",
+      "propertyId": "vizag-prop-1",
+      "propertyTitle": "MVP Colony Sector 6 Luxury 2 BHK Flat",
+      "propertyLocality": "MVP Colony",
+      "ownerId": "owner-vizag-1",
+      "customerId": "cust-vizag-1",
+      "customerName": "Rohan Sharma",
+      "customerPhone": "+91 99887 66554",
+      "offeredMonthlyRent": 17500,
+      "originalMonthlyRent": 18500,
+      "proposedTenancyMonths": 11,
+      "proposedMoveInDate": "2026-12-01",
+      "notes": "Offering 1-year continuous lease with 2 months upfront deposit.",
+      "status": "Pending",
+      "createdAt": "2026-11-05T15:00:00.000Z"
+    }
+  ],
+  "reports": [],
+  "favourites": [
+    {
+      "userId": "owner-vizag-1",
+      "propertyId": "vizag-prop-1",
+      "createdAt": "2026-11-06T12:45:31.387Z"
+    }
+  ]
+}
